@@ -1,0 +1,38 @@
+{
+  "name": "kingdomjs",
+  "version": "2.0.0",
+  "description": "xml parser",
+  "main": "lib/kingdom.js",
+  "scripts": {
+    "test": "./node_modules/.bin/mocha --harmony_proxies",
+    "test:watch": "./node_modules/.bin/mocha --harmony_proxies --watch",
+    "coverage" : "node --harmony_proxies node_modules/istanbul/lib/cli.js cover _mocha -- --recursive && ./node_modules/.bin/istanbul check-coverage",
+    "lint": "./node_modules/.bin/eslint . --ext .js --debug"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/viqueen/kingdomjs.git"
+  },
+  "keywords": [
+    "kingdom",
+    "xml"
+  ],
+  "author": "Hasnae Rehioui <hasnaer.labset@gmail.com> (http://viqueen.github.io)",
+  "license": "Apache-2.0",
+  "bugs": {
+    "url": "https://github.com/viqueen/kingdomjs/issues"
+  },
+  "homepage": "https://github.com/viqueen/kingdomjs#readme",
+  "devDependencies": {
+    "eslint": "^2.2.0",
+    "istanbul": "^0.4.2"
+  },
+  "dependencies": {
+    "babel-preset-es2015": "^6.5.0",
+    "babel-preset-react": "^6.5.0",
+    "harmony-reflect": "^1.4.2",
+    "react": "^0.14.7",
+    "underscore": "^1.8.3",
+    "xmldom": "^0.1.22"
+  }
+}
